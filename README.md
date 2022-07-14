@@ -1,47 +1,45 @@
-# 7Learnings Code Challenges
+# 7Learnings Data Scientist Code Challenges
 
-The 7Learnings code challenge is an opportunity to demonstrate proficiency in the problem solving skills we expect you to use at 7Learnings.
+Hello potential 7Learnings colleague!
+This coding challenge is an opportunity for you to demonstrate your skills and knowledge regarding data science as well as your ability to work independently and use documentation where required. It is not about getting the right solution, try to get as far as you can we will discuss your approach and experience in the interview.
 
-We don't believe there is a one-size-fits-all technology solution. Solid development is about using the right tools for the job, and constantly learning about them. Use your README to discuss the experience you have with the technical stack you selected and we'll make note of that when reviewing your solution.
+## The Coding Challenge
 
-## Expectations
+This repository contains a jupyter notebook with the coding challenge consisting of 2 parts. We also provied data in `coding_challenge.csv` which you can use in case you get stuck in Part 1. 
+Create a new git repository for this project and organize your code within that repo. You can provide your solution and thoughtprocess directly within the notebook.
+Once you are finished commit and push your code and email the link to your 7Learnings contact.
 
-Select the role specific challenges and create a new git repository for that project. Organize your code within that repo -- when you get to a stopping point, commit and push your code and email a link to your repo to your 7Learnings contact.
+We adivse you to use a virtual environment and install the dependencies there:
+ ```
+ virtualenv venv
+ source venv/bin/activate
+ pip install -r requirements.txt
+ ```
+ 
+In order to succesfully do this coding challenge you will need to  have a [gmail account](https://accounts.google.com/signup/v2/webcreateaccount?continue=https%3A%2F%2Fmyaccount.google.com%3Futm_source%3Daccount-marketing-page%26utm_medium%3Dcreate-account-button&flowName=GlifWebSignIn&flowEntry=SignUp) to enter the [google cloude console](https://console.cloud.google.com) where you can create your first project. Google might keep trying to get you to sign up for their free trial but you can safely ignore that, our challenge works with the [Sandbox version](https://cloud.google.com/bigquery/docs/sandbox). 
+
+Once you finisehd setting up your project you you will need to run 
+
+
+```
+gcloud auth application-default login
+```
+and also set to your default project. 
+
+If you run into issues with using BigQuery in Jupyter Notebook you can refer to the documentation [here](https://cloud.google.com/bigquery/docs/visualize-jupyter) and the links provided above where you can find all the information you will need. 
 
 #### Time Allotment
+We respect your time and don't expect you to spend more than 3 hours on this. Try to get as far as you can, your solutions will then be discussed in the next interview, feel free to also add comments and explain what you intended to do. 
 
-We respect your time and don't want you spending more 3 hours on your challenge. We just want to get a sense of your thought process and development patterns. If there are features you don't have time to implement, feel free to use pseudo code to describe the intended behavior.
-
-
-#### Your Challenge README
-
-Include the following items in your `README`:
-
-* Description of the problem, solution and how-to run the solution.
-* Reasoning behind your technical choices. Trade-offs you might have made, anything you left out, or what you might do differently if you were to spend additional time on the project.
-* Link to to the hosted application where applicable.
-
-#### Commit History
-
-Use whatever development workflow works best for you. If your solution is small enough and a single commit is justified, that's fine; we just ask that you keep your [commit history as coherent as possible](https://www.reviewboard.org/docs/codebase/dev/git/clean-commits/).
 
 ## What We Review
 
 Your application will be reviewed by our engineers. The aspects of your code we will judge include:
 
-* **Clarity:** Does the README clearly explain the problem and solution?
-* **Correctness:** Does the application do what was asked? If there is anything missing, does the README explain why it is missing?
-* **Code Quality:** Is the code simple, easy to understand, and maintainable?
-* **Testing:** If required - how thorough are the automated tests? Will they be difficult to change if the requirements of the application were to change?
-* **Technical Choices:** Do choices of libraries, databases, architecture seem appropriate for the challenge?
+- ability to get the technical environment set up 
+- sql coding knowledge
+- data cleansing and abstraction
+- understanding of time-dependent data
+- machine learning knowledge and evaluation metrics 
 
 
-## Links To Team Specific Challenges
-
-- [Data Scientist Challenges](./datascience/README.md)
-- [Front-End Developer Challenge](./frontend/README.md)
-
-
-## Credits
-
-- This README is based on [https://github.com/Guidebook/code-challenges](https://github.com/Guidebook/code-challenges)
